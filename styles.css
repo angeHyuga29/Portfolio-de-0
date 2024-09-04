@@ -6,19 +6,19 @@ body {
     margin: 0;
     padding: 0;
     padding-bottom: 100px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #CF8BF3;
     text-align: center;
     margin: 3% 0;
     line-height: 1.3;
     text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
-    letter-spacing: 0.01rem;
+    letter-spacing: 0.02rem;
     text-transform: uppercase;
     padding: 0.7%;
     border-bottom: 0.2rem solid #CF8BF3;
@@ -31,17 +31,17 @@ h1 {
 .parrafito1 {
     text-align: center;
     font-family: 'Arial', sans-serif;
-    font-size: 150%;
+    font-size: 175%;
     line-height: 1.5;
     color: #D8A5A3;
     margin: 0;
-    padding: 1rem;
+    padding: 1.2rem;
     background: linear-gradient(to right, #ffc0cb, #800080);
 }
 
 .img-circular {
-    width: 20rem;
-    height: 20rem;
+    width: 22rem;
+    height: 22rem;
     border-radius: 50%;
     object-fit: cover;
     border: 0.4rem solid rgba(204, 24, 204, 0.3);
@@ -131,14 +131,14 @@ main {
 .parrafito2 {
     color: #651463;
     text-align: center;
-    font-size: 100%;
+    font-size: 120%;
     font-weight: bold;
     padding: 2%;
 }
 
 @media (max-width: 768px) {
     body {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .nav-list {
@@ -151,22 +151,22 @@ main {
     }
 
     .img-circular {
-        width: 15rem;
-        height: 15rem;
+        width: 17rem;
+        height: 17rem;
     }
 
     .parrafito1, .parrafito2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 480px) {
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .nav-list {
@@ -178,15 +178,15 @@ main {
     }
 
     .img-circular {
-        width: 12rem;
-        height: 12rem;
+        width: 14rem;
+        height: 14rem;
     }
 
     .parrafito1, .parrafito2 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
