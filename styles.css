@@ -29,12 +29,12 @@ h1 {
 
 .parrafito1 {
     text-align: center;
-    font-family: 'Arial', sans-serif; /* Fuente clara y legible */
-    font-size: 25px; /* Tamaño de fuente adecuado */
-    line-height: 1.5; /* Espaciado de línea para mejor legibilidad */
-    color: #D8A5A3; /* Color del texto */
-    margin: 0; /* Margen para ajustar el espacio */
-    padding: 10px; /* Espacio interno para que el texto no esté pegado al borde */
+    font-family: 'Arial', sans-serif; 
+    font-size: 25px; 
+    line-height: 1.5; 
+    color: #D8A5A3;
+    margin: 0;
+    padding: 10px; /* Corregido el comentario aquí */
     background: linear-gradient(to right, #ffc0cb, #800080);
 }
 
@@ -83,35 +83,35 @@ img {
 }
 
 .email:hover {
-    color: #CF8BF3; /* Color de texto resaltado */
+    color: #CF8BF3; 
 }
 
 .navbar {
     background: linear-gradient(to right, #f1c1c9, #900790);
-    padding: 10px 0; /* Espaciado superior e inferior */
+    padding: 10px 0; 
 }
 
 .nav-list {
-    list-style: none; /* Quita los puntos de la lista */
+    list-style: none; 
     margin: 0;
     padding: 0;
-    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos horizontalmente */
+    display: flex; 
+    justify-content: center;
 }
 
 .nav-list li {
-    margin: 0 15px; /* Espaciado entre los elementos de la lista */
+    margin: 0 100px; 
 }
 
 .nav-list a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #f1c1c9; /* Color del texto del enlace */
-    font-weight: bold; /* Peso de fuente en negrita */
-    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+    text-decoration: none; 
+    color: #f1c1c9; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
 }
 
 .nav-list a:hover {
-    color: #FAF3F2; /* Color del texto cuando se pasa el ratón sobre el enlace */
+    color: #FAF3F2; 
 }
 
 main {
@@ -119,75 +119,75 @@ main {
 }
 
 .URL {
-    color: #651463; /* Color inicial del enlace */
+    color: #651463; 
 }
 
 .URL:hover {
-    color: #900790; /* Nuevo color del texto cuando se pasa el ratón */
-    text-decoration: underline; /* Subrayado cuando se pasa el ratón */
+    color: #900790; 
+    text-decoration: underline; 
 }
 
 .parrafito2 {
     color: #651463;
     text-align: center;
-    font-size: 18px; /* Cambia el tamaño de la fuente */
-    font-weight: bold; /* Hace que el texto sea negrita */
-    padding: 25px; /* Ajusta el relleno dentro del párrafo */
+    font-size: 18px;
+    font-weight: bold; 
+    padding: 25px; 
 }
 
-/* Estilos específicos para tabletas */
+
 @media (max-width: 768px) {
     body {
-        font-size: 16px; /* Ajusta el tamaño de fuente para tabletas */
+        font-size: 16px; 
     }
 
     .nav-list {
-        flex-direction: column; /* Cambia la dirección de los elementos de la lista a vertical */
-        align-items: center; /* Alinea los elementos al centro */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .nav-list li {
-        margin: 10px 0; /* Ajusta el espaciado entre los elementos de la lista */
+        margin: 10px 0; 
     }
 
     .img-circular {
-        width: 150px; /* Reduce el tamaño de la imagen en pantallas más pequeñas */
+        width: 150px; 
         height: 150px;
     }
 
     .parrafito1, .parrafito2 {
-        font-size: 18px; /* Ajusta el tamaño de la fuente */
+        font-size: 18px; 
     }
 
     h1 {
-        font-size: 2.5rem; /* Ajusta el tamaño del título */
+        font-size: 2.5rem; 
     }
 }
 
-/* Estilos para dispositivos muy pequeños */
+
 @media (max-width: 480px) {
     body {
-        font-size: 14px; /* Ajusta el tamaño de fuente para móviles */
+        font-size: 14px; 
     }
 
     .nav-list {
-        flex-direction: column; /* Asegura que la lista de navegación esté en columna */
+        flex-direction: column; 
     }
 
     .nav-list li {
-        margin: 5px 0; /* Ajusta el espaciado entre los elementos de la lista */
+        margin: 5px 0; 
     }
 
     .img-circular {
-        width: 120px; /* Reduce aún más el tamaño de la imagen en dispositivos pequeños */
+        width: 120px; 
         height: 120px;
     }
 
     .parrafito1, .parrafito2 {
-        font-size: 16px; /* Ajusta el tamaño de la fuente */
+        font-size: 16px; 
     }
 
     h1 {
-        font-size: 2rem; /* Ajusta el tamaño del título */
+        font-size: 2rem;
     }
 }
