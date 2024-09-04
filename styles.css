@@ -1,0 +1,193 @@
+body {
+    background: #800080;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc0cb, #800080);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc0cb, #800080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 3rem; 
+    font-weight: 700; 
+    color: #CF8BF3; 
+    text-align: center;
+    margin: 30px 0; 
+    line-height: 1.3; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+    padding: 15px; 
+    border-bottom: 3px solid #CF8BF3; 
+    max-width: 90%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    transition: all 0.3s ease; 
+}
+
+.parrafito1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Fuente clara y legible */
+    font-size: 25px; /* Tamaño de fuente adecuado */
+    line-height: 1.5; /* Espaciado de línea para mejor legibilidad */
+    color: #D8A5A3; /* Color del texto */
+    margin: 0; /* Margen para ajustar el espacio */
+    padding: 10px; /* Espacio interno para que el texto no esté pegado al borde */
+    background: linear-gradient(to right, #ffc0cb, #800080);
+}
+
+.img-circular {
+    width: 210px; 
+    height: 210px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 5px solid rgba(204, 24, 204, 0.3); 
+    box-shadow: 0 0 5px rgba(163, 67, 141, 0.2); 
+    display: block; 
+    margin: 0 auto; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+img {
+    border: none; 
+    margin: 0;
+    padding: 0; 
+    display: block; 
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background: linear-gradient(to right, #f1c1c9, #900790); 
+    color: #fc67fa; 
+    text-align: center; 
+    padding: 5px; 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+}
+
+.footer a {
+    color: #fc67fa;
+    text-decoration: none;
+}
+
+.email {
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.email:hover {
+    color: #CF8BF3; /* Color de texto resaltado */
+}
+
+.navbar {
+    background: linear-gradient(to right, #f1c1c9, #900790);
+    padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+.nav-list {
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.nav-list li {
+    margin: 0 15px; /* Espaciado entre los elementos de la lista */
+}
+
+.nav-list a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #f1c1c9; /* Color del texto del enlace */
+    font-weight: bold; /* Peso de fuente en negrita */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.nav-list a:hover {
+    color: #FAF3F2; /* Color del texto cuando se pasa el ratón sobre el enlace */
+}
+
+main {
+    padding: 20px;
+}
+
+.URL {
+    color: #651463; /* Color inicial del enlace */
+}
+
+.URL:hover {
+    color: #900790; /* Nuevo color del texto cuando se pasa el ratón */
+    text-decoration: underline; /* Subrayado cuando se pasa el ratón */
+}
+
+.parrafito2 {
+    color: #651463;
+    text-align: center;
+    font-size: 18px; /* Cambia el tamaño de la fuente */
+    font-weight: bold; /* Hace que el texto sea negrita */
+    padding: 25px; /* Ajusta el relleno dentro del párrafo */
+}
+
+/* Estilos específicos para tabletas */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Ajusta el tamaño de fuente para tabletas */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Cambia la dirección de los elementos de la lista a vertical */
+        align-items: center; /* Alinea los elementos al centro */
+    }
+
+    .nav-list li {
+        margin: 10px 0; /* Ajusta el espaciado entre los elementos de la lista */
+    }
+
+    .img-circular {
+        width: 150px; /* Reduce el tamaño de la imagen en pantallas más pequeñas */
+        height: 150px;
+    }
+
+    .parrafito1, .parrafito2 {
+        font-size: 18px; /* Ajusta el tamaño de la fuente */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Ajusta el tamaño del título */
+    }
+}
+
+/* Estilos para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Ajusta el tamaño de fuente para móviles */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Asegura que la lista de navegación esté en columna */
+    }
+
+    .nav-list li {
+        margin: 5px 0; /* Ajusta el espaciado entre los elementos de la lista */
+    }
+
+    .img-circular {
+        width: 120px; /* Reduce aún más el tamaño de la imagen en dispositivos pequeños */
+        height: 120px;
+    }
+
+    .parrafito1, .parrafito2 {
+        font-size: 16px; /* Ajusta el tamaño de la fuente */
+    }
+
+    h1 {
+        font-size: 2rem; /* Ajusta el tamaño del título */
+    }
+}
