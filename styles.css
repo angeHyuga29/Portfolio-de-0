@@ -1,80 +1,78 @@
-body {
-    background: #800080;
-    background: -webkit-linear-gradient(to right, #ffc0cb, #800080);
-    background: linear-gradient(to right, #ffc0cb, #800080);
-    font-family: Arial, sans-serif;
+body { 
+    background-color: #f9f4e8; /* Beige suave */
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Cambiado a Plus Jakarta Sans */
     margin: 0;
     padding: 0;
-    padding-bottom: 100px;
     font-size: 18px;
+    min-height: 100vh; /* Asegura que el footer esté al final de la página */
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Cambiado a Plus Jakarta Sans */
     font-size: 3.5rem;
     font-weight: 700;
-    color: #CF8BF3;
+    color: #d57b9e; /* Rosa suave */
     text-align: center;
     margin: 3% 0;
     line-height: 1.3;
-    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
     letter-spacing: 0.02rem;
     text-transform: uppercase;
     padding: 0.7%;
-    border-bottom: 0.2rem solid #CF8BF3;
+    border-bottom: 0.2rem solid #d57b9e; /* Rosa suave */
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     transition: all 0.3s ease;
 }
 
+.parrafito1, .parrafito2 {
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Cambiado a Plus Jakarta Sans */
+}
+
 .parrafito1 {
     text-align: center;
-    font-family: 'Arial', sans-serif;
     font-size: 175%;
     line-height: 1.5;
-    color: #D8A5A3;
+    color: #6f4e37; /* Marrón oscuro */
     margin: 0;
     padding: 1.2rem;
-    background: linear-gradient(to right, #ffc0cb, #800080);
+    background: #fce4e1; /* Rosa muy suave */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra añadida */
 }
 
 .img-circular {
-    width: 22rem;
-    height: 22rem;
+    width: 18rem; 
+    height: 18rem; 
     border-radius: 50%;
     object-fit: cover;
-    border: 0.4rem solid rgba(204, 24, 204, 0.3);
-    box-shadow: 0 0 0.5rem rgba(163, 67, 141, 0.2);
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    overflow: hidden;
+    border: 0.4rem solid rgba(204, 24, 204, 0.2); 
+    box-shadow: 0 0 1rem rgba(163, 67, 141, 0.2); 
+    transition: transform 0.3s ease; 
+    cursor: pointer;
 }
 
-img {
-    border: none;
-    margin: 0;
-    padding: 0;
-    display: block;
-    max-width: 100%;
-    height: auto;
+.image-container {
+    display: flex;
+    justify-content: center; 
+    margin: 2rem 0; 
 }
 
 .footer {
-    background: linear-gradient(to right, #f1c1c9, #900790);
-    color: #fc67fa;
+    background-color: #d57b9e; /* Rosa suave */
+    color: white;
     text-align: center;
-    padding: 0.3%;
-    position: fixed;
-    bottom: 0;
+    padding: 1rem 0; 
     width: 100%;
-    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Espacio encima del footer */
 }
 
 .footer a {
-    color: #fc67fa;
+    color: #f9f4e8; /* Beige claro */
     text-decoration: none;
 }
 
@@ -84,58 +82,53 @@ img {
 }
 
 .email:hover {
-    color: #CF8BF3;
+    color: #e2b0c6; /* Rosa más claro al pasar el mouse */
 }
 
 .navbar {
-    background: linear-gradient(to right, #f1c1c9, #900790);
+    background-color: #f9f4e8; /* Beige claro */
     padding: 0.9%;
 }
 
-.nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-list li {
-    margin: 0 10%;
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Espacio entre los elementos del menú */
 }
 
 .nav-list a {
     text-decoration: none;
-    color: #f1c1c9;
+    color: #6f4e37; /* Marrón oscuro */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav-list a:hover {
-    color: #FAF3F2;
+    color: #d57b9e; /* Rosa suave al pasar el mouse */
+    text-shadow: 0 0.1rem rgba(255, 255, 255, 0.3); /* Sutil efecto de sombra al pasar el mouse */
 }
 
 main {
+    flex: 1; /* Permite que el main ocupe el espacio restante */
     padding: 0.9%;
 }
 
 .URL {
-    color: #651463;
+    color: #d57b9e; /* Rosa suave */
 }
 
 .URL:hover {
-    color: #900790;
+    color: #e2b0c6; /* Rosa claro al pasar el mouse */
     text-decoration: underline;
 }
 
 .parrafito2 {
-    color: #651463;
+    color: #6f4e37; /* Marrón oscuro */
     text-align: center;
     font-size: 120%;
     font-weight: bold;
     padding: 2%;
 }
 
+/* Media Queries para Responsividad */
 @media (max-width: 768px) {
     body {
         font-size: 18px;
